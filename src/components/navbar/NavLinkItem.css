@@ -1,0 +1,27 @@
+.App-NavLinkItem {
+    display: block;
+}
+
+.App-NavLinkItem a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    padding: 8px;
+}
+
+.App-NavLinkItem a:active {
+    color: #f4a460;
+}
+
+@media only screen and (min-width: 780px) {
+    .App-NavLinkItem {
+        display: inline;
+    }
+    .App-NavLinkItem a:hover {
+        color: #f4a460;
+    }
+    .App-NavLinkItem a:active {
+        color: #515151;
+    }
+}
