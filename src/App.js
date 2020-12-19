@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from './components/navbar/Header';
-import Main from './components/Main';
+import Main from './components/main/Main';
 import Footer from './components/Footer';
 
 const App = () => {
   return (
     <div className="App">
-      <Header title={headerInfo.title} links={headerInfo.links}/>
+      <Header pageInfo={headerInfo.pageInfo} links={headerInfo.links}/>
       <Main />
       <Footer copyText={footerInfo.crText}/>
     </div>
@@ -15,7 +15,10 @@ const App = () => {
 }
 
 const headerInfo = {
-  title: 'Joonas Niemi',
+  pageInfo: {
+    title: 'Joonas Niemi',
+    url: '#',
+  },
   links: [
     {id: 0, url: '#about', title: 'About me'},
     {id: 1, url: '#projects', title: 'Projects'},

@@ -3,7 +3,7 @@ import './Header.css'
 import NavLinks from './NavLinks';
 import {FaBars} from 'react-icons/fa';
 
-const Header = ({title, links}) => {
+const Header = ({pageInfo, links}) => {
   const [isActive, setActive] = useState(false);
   const toggleVisibility = () => setActive(!isActive);
 
@@ -18,7 +18,7 @@ const Header = ({title, links}) => {
 
   return (
       <div className="App-Header">
-        <a href='#' onClick={() => setActive(false)}>{title}</a>
+        <a href={pageInfo.url} onClick={() => setActive(false)}>{pageInfo.title}</a>
         <FaBars className='App-Bars' onClick={toggleVisibility}/>
         <NavLinks links={links} clickEvt={toggleVisibility} className={isActive ? 'visible' : null}/>
       </div>
