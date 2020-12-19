@@ -6,12 +6,16 @@
     padding: 8px;
 }
 
-.App-Header h1 {
+.App-Header > a {
     font-family: 'Quicksand', sans-serif;
     font-size: 35px;
     font-weight: 300;
     color: white;
     grid-column-start: 1;
+}
+
+.App-Header > a:active {
+    color: #f4a460;
 }
 
 .App-Bars {
@@ -32,9 +36,18 @@
 }
 
 @media only screen and (min-width: 780px) {
-    .App-Header h1 {
+    .App-Header > a {
         font-size: 45px;
     }
+
+    .App-Header > a:hover {
+        color: #f4a460;
+    }
+
+    .App-Header > a:active {
+        color: #515151;
+    }
+
     .App-Bars {
         display: none;
     }

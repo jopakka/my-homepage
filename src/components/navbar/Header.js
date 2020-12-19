@@ -18,9 +18,9 @@ const Header = ({title, links}) => {
 
   return (
       <div className="App-Header">
-        <h1>{title}</h1>
+        <a href='#' onClick={() => setActive(false)}>{title}</a>
         <FaBars className='App-Bars' onClick={toggleVisibility}/>
-        <NavLinks links={links} className={isActive ? 'responsive-nav' : null}/>
+        <NavLinks links={links} clickEvt={toggleVisibility} className={isActive ? 'visible' : null}/>
       </div>
   );
 }

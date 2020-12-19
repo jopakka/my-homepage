@@ -17,9 +17,9 @@ const App = () => {
 const headerInfo = {
   title: 'Joonas Niemi',
   links: [
-    {id: 0, url: '#', title: 'Home'},
+    {id: 0, url: '#about', title: 'About me'},
     {id: 1, url: '#projects', title: 'Projects'},
-    {id: 2, url: '#contact', title: 'Contact me'},
+    {id: 2, url: '#contact', title: 'Contact'},
   ]
 }
 
