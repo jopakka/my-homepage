@@ -12,6 +12,8 @@
     font-weight: 300;
     color: white;
     grid-column-start: 1;
+    justify-self: start;
+    transition: none;
 }
 
 .App-Header > a:active {
@@ -38,6 +40,7 @@
 @media only screen and (min-width: 780px) {
     .App-Header > a {
         font-size: 45px;
+        transition: color 200ms;
     }
 
     .App-Header > a:hover {
