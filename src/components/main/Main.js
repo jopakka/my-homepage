@@ -1,15 +1,20 @@
 import React from 'react';
 import './Main.css'
+import About from './About';
 
 const Main = () => {
   return (
       <div className="App-Main">
-        <h1>Nice title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis culpa delectus ducimus ea earum, expedita iure magni molestiae nam nemo neque non numquam porro praesentium quia suscipit voluptatem voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis culpa delectus ducimus ea earum, expedita iure magni molestiae nam nemo neque non numquam porro praesentium quia suscipit voluptatem voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis culpa delectus ducimus ea earum, expedita iure magni molestiae nam nemo neque non numquam porro praesentium quia suscipit voluptatem voluptatum?</p>
+        <About img={aboutInfo.img} />
       </div>
   );
+}
+
+const aboutInfo = {
+  img: {
+    url: 'https://randomuser.me/api/portraits/thumb/men/1.jpg',
+    alt: 'Nice picture of me'
+  }
 }
 
 export default Main;
