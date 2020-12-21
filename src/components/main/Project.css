@@ -1,0 +1,39 @@
+.Project {
+    width: 280px;
+    height: 280px;
+    background-color: #ffffff;
+    margin: 10px;
+    position: relative;
+}
+
+.info {
+    position: relative;
+    z-index: 10;
+}
+
+.Project img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+.Project-Content {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+    z-index: 10;
+    color: white;
+    padding: 10px;
+    overflow: scroll;
+    background-color: rgba(143, 143, 143, 0.7);
+}
+
+.Project-Content-Hidden {
+    display: none;
+}

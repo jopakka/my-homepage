@@ -20,9 +20,9 @@ const headerInfo = {
     url: '#',
   },
   links: [
-    {id: 0, url: '#about', title: 'About me'},
-    {id: 1, url: '#projects', title: 'Projects'},
-    {id: 2, url: '#contact', title: 'Contact'},
+    {url: '#about', title: 'About me'},
+    {url: '#projects', title: 'Projects'},
+    {url: '#contact', title: 'Contact'},
   ]
 }
 

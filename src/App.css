@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,6 @@ body {
 }
 
 a {
-  color: #333;
   text-decoration: none;
 }
 
@@ -27,6 +26,13 @@ h1 {
   text-align: center;
 }
 
-.scrollMargin {
-  scroll-margin-top: 65px;
+h2 {
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.2em;
 }
