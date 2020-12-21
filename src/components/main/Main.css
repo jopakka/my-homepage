@@ -1,8 +1,18 @@
-p {
-    padding-bottom: 1em;
-    text-align: justify;
+.App-Main {
+    padding: 8px 16px;
 }
 
-.App-Main {
-    padding: 8px;
+.Main-Container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.dark {
+    background-color: #333333;
+    color: #eee;
+}
+
+.light {
+    background-color: #eee;
+    color: #333333;
 }

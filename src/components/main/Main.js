@@ -1,18 +1,21 @@
 import React from 'react';
 import './Main.css'
 import About from './About';
+import image from '../../resources/omakuva300.jpg';
 
 const Main = () => {
   return (
-      <div className="App-Main">
-        <About img={aboutInfo.img} />
+      <div className="App-Main light">
+        <div className='Main-Container'>
+          <About id='about' img={aboutInfo.img}/>
+        </div>
       </div>
   );
 }
 
 const aboutInfo = {
   img: {
-    url: 'https://randomuser.me/api/portraits/thumb/men/1.jpg',
+    url: image,
     alt: 'Nice picture of me'
   }
 }

@@ -1,0 +1,49 @@
+.App-About {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+}
+
+.App-About h1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.about-image {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto 20px;
+    display: block;
+    border: ridge 10px gray;
+    border-radius: 20% 10%;
+}
+
+.about-text {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+@media only screen and (min-width: 780px) {
+    .App-About {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+    }
+
+    .App-About h1 {
+        grid-row-start: 1;
+        grid-column: 1 / span 2;
+    }
+
+    .about-image {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        margin-right: 30px;
+    }
+
+    .about-text {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+}

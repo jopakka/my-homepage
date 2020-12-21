@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,11 +7,26 @@
 }
 
 body {
-  font-family: Arial, Helvetica, serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.4;
 }
 
 a {
   color: #333;
   text-decoration: none;
+}
+
+p {
+  padding-bottom: 1em;
+  text-align: justify;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+
+.scrollMargin {
+  scroll-margin-top: 65px;
 }

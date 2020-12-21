@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 const App = () => {
   return (
     <div className="App">
-      <Header pageInfo={headerInfo.pageInfo} links={headerInfo.links}/>
+      <Header pageInfo={headerInfo.pageInfo} links={headerInfo.links} />
       <Main />
       <Footer copyText={footerInfo.crText}/>
     </div>
