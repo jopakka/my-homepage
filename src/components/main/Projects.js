@@ -1,10 +1,10 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
 import './Projects.css';
-import windowDimensions from '../hooks/windowDimensions';
+import WindowDimensions from '../hooks/WindowDimensions';
 
 const Projects = ({id, title, projects}) => {
-  const {width} = windowDimensions();
+  const {width} = WindowDimensions();
 
   return (
       <div id={id} className='App-Projects'>
@@ -15,7 +15,7 @@ const Projects = ({id, title, projects}) => {
               key={projects.indexOf(proj)}
               title={proj.title}
               desc={proj.desc}
-              img={proj.img}/>)}
+              img={proj.img ? proj.img : `https://picsum.photos/30${Math.floor(Math.random() * 10)}`}/>)}
         </div>
       </div>
   );

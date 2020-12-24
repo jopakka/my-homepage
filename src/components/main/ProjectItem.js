@@ -11,9 +11,9 @@ const ProjectItem = ({title, desc, img}) => {
       <div className='Project' onClick={toggleVisible} onMouseEnter={visibleOn}
            onMouseLeave={visibleOff}>
         <img src={img} alt="Project background" width={280} height={280}/>
-        <div className='Project-Content'>
+        <div className={!isActive ? 'Project-Content Scroll' : 'Project-Content'}>
           <h3>{title}</h3>
-          <p className={isActive ? 'Project-Content-Hidden' : null}>{desc}</p>
+          <p className={isActive ? 'Project-Content-Para-Hidden' : null}>{desc}</p>
         </div>
       </div>
   )

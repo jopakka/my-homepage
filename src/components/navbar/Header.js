@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Header.css';
 import NavLinks from './NavLinks';
 import {FaBars} from 'react-icons/fa';
-import windowDimensions from '../hooks/windowDimensions';
+import windowDimensions from '../hooks/WindowDimensions';
 
 const Header = ({pageInfo, links, navId}) => {
   const {width} = windowDimensions();

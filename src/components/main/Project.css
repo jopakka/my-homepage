@@ -30,10 +30,13 @@
     z-index: 10;
     color: white;
     padding: 10px;
-    overflow: scroll;
     background-color: rgba(143, 143, 143, 0.7);
 }
 
-.Project-Content-Hidden {
+.Scroll {
+    overflow: auto;
+}
+
+.Project-Content-Para-Hidden {
     display: none;
 }
