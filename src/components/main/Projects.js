@@ -15,7 +15,7 @@ const Projects = ({id, title, projects}) => {
               key={projects.indexOf(proj)}
               title={proj.title}
               desc={proj.desc}
-              img={proj.img ? proj.img : `https://picsum.photos/30${Math.floor(Math.random() * 10)}`}/>)}
+              img={proj.img ? proj.img : 'https://picsum.photos/300'}/>)}
         </div>
       </div>
   );
