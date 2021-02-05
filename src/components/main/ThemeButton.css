@@ -4,29 +4,32 @@
     padding-left: 2em;
     display: flex;
     align-items: center;
-    line-height: 1em;
 }
 
-.theme-button a {
+.theme-button button {
     color: white;
     font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    line-height: 0;
 }
 
-.theme-button > a:active {
+.theme-button > button:active {
     color: #f4a460;
 }
 
 @media only screen and (min-width: 780px) {
-    .theme-button > a {
+    .theme-button > button {
         font-size: 2em;
         transition: color 200ms;
     }
 
-    .theme-button > a:hover {
+    .theme-button > button:hover {
         color: #f4a460;
     }
 
-    .theme-button > a:active {
+    .theme-button > button:active {
         color: #515151;
     }
 }

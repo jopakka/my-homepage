@@ -9,11 +9,11 @@ const ThemeButton = () => {
 
   return (
       <div className="theme-button">
-        <a onClick={toggleTheme}>
+        <button onClick={toggleTheme}>
           {
             darkTheme ? <FaSun /> : <FaMoon />
           }
-        </a>
+        </button>
       </div>
   );
 };
