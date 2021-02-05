@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import PropTypes from 'prop-types';
 
 const Footer = ({copyText}) => {
   return (
@@ -8,5 +9,9 @@ const Footer = ({copyText}) => {
       </div>
   );
 }
+
+Footer.propTypes = {
+  copyText: PropTypes.string,
+};
 
 export default Footer;

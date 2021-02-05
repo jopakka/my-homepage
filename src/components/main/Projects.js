@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectItem from './ProjectItem';
 import './Projects.css';
 import WindowDimensions from '../hooks/WindowDimensions';
+import PropTypes from "prop-types";
 
 const Projects = ({id, title, projects}) => {
   const {width} = WindowDimensions();
@@ -24,6 +25,12 @@ const Projects = ({id, title, projects}) => {
 
 Projects.defaultProps = {
   title: 'Projects',
+}
+
+Projects.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.string,
+  projects: PropTypes.array
 }
 
 export default Projects;

@@ -4,6 +4,7 @@ import NavLinks from './NavLinks';
 import {FaBars} from 'react-icons/fa';
 import windowDimensions from '../hooks/WindowDimensions';
 import ThemeButton from '../main/ThemeButton';
+import PropTypes from "prop-types";
 
 const Header = ({pageInfo, links, navId}) => {
   const {width} = windowDimensions();
@@ -19,9 +20,15 @@ const Header = ({pageInfo, links, navId}) => {
         <a href={pageInfo.url} onClick={() => setActive(false)}>{pageInfo.title}</a>
         <ThemeButton />
         <FaBars className='App-Bars' onClick={toggleVisibility}/>
-        <NavLinks links={links} onClick={() => setActive(false)} className={isActive ? 'visible' : null}/>
+        <NavLinks links={links} onClickEvt={() => setActive(false)} className={isActive ? 'visible' : null}/>
       </div>
   );
 }
+
+Header.propTypes = {
+  pageInfo: PropTypes.object,
+  links: PropTypes.array,
+  navId: PropTypes.string,
+};
 
 export default Header;

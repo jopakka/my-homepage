@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import PropTypes from 'prop-types';
 
 const About = ({id, img, imgInfo, texts}) => {
   return (
@@ -18,6 +19,13 @@ About.defaultProps = {
     url: 'https://randomuser.me/api/portraits/thumb/men/1.jpg',
     alt: 'Picture from randomuser.me'
   }
+}
+
+About.propTypes = {
+  id: PropTypes.string,
+  img: PropTypes.string,
+  imgInfo: PropTypes.object,
+  texts: PropTypes.array
 }
 
 export default About;

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Project.css';
+import PropTypes from "prop-types";
 
 const ProjectItem = ({title, desc, img}) => {
   const [isActive, setActive] = useState(true);
@@ -17,6 +18,12 @@ const ProjectItem = ({title, desc, img}) => {
         </div>
       </div>
   )
+}
+
+ProjectItem.propTypes = {
+  title: PropTypes.string,
+  desc: PropTypes.string,
+  img: PropTypes.string
 }
 
 export default ProjectItem;
