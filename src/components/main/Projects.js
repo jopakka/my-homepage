@@ -9,7 +9,8 @@ const Projects = ({id, title, projects}) => {
   return (
       <div id={id} className='App-Projects'>
         <h1>{title}</h1>
-        <p style={{textAlign: 'center', display: width < 780 ? 'block' : 'none'}}>(Click image to show more info)</p>
+        {width < 780 && <p style={{textAlign: 'center'}}>(Click image to show more info)</p>}
+
         <div className='project-container'>
           {projects.map(proj => <ProjectItem
               key={projects.indexOf(proj)}
