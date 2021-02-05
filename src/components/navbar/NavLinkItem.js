@@ -1,16 +1,19 @@
 import React from 'react';
 import './NavLinkItem.css';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const NavLinkItem = ({link, onClickEvt}) => {
   return (
-      <li className='App-NavLinkItem'><a href={link.url} onClick={onClickEvt}>{link.title}</a></li>
+      <li className='App-NavLinkItem'>
+        <a href={link.url} onClick={onClickEvt}>{link.title}</a>
+      </li>
   );
-}
+};
 
 NavLinkItem.defaultProps = {
-  onClickEvt: () => {}
-}
+  onClickEvt: () => {
+  },
+};
 
 NavLinkItem.propTypes = {
   link: PropTypes.object,

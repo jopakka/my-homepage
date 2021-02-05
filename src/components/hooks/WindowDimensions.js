@@ -6,10 +6,10 @@ const WindowDimensions = () => {
   useEffect(() => {
     const handleResize = () => {
       setDimens(getWindowDimensions());
-    }
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return dimens;
 };
@@ -19,4 +19,4 @@ const getWindowDimensions = () => {
   return {width, height};
 };
 
-export default WindowDimensions
+export default WindowDimensions;

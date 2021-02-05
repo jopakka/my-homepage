@@ -19,12 +19,15 @@
     .App-NavLinkItem {
         display: inline;
     }
+
     .App-NavLinkItem a {
         transition: color 200ms;
     }
+
     .App-NavLinkItem a:hover {
         color: #f4a460;
     }
+
     .App-NavLinkItem a:active {
         color: #515151;
     }

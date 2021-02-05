@@ -8,7 +8,7 @@ const Footer = ({copyText}) => {
         <p>&copy; {copyText}</p>
       </div>
   );
-}
+};
 
 Footer.propTypes = {
   copyText: PropTypes.string,

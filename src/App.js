@@ -7,15 +7,15 @@ import {MainProvider} from './components/contexts/MainContext';
 
 const App = () => {
   return (
-    <div className="App">
-      <MainProvider>
-        <Header pageInfo={headerInfo.pageInfo} links={headerInfo.links} />
-        <Main />
-        <Footer copyText={footerInfo.crText}/>
-      </MainProvider>
-    </div>
+      <div className="App">
+        <MainProvider>
+          <Header pageInfo={headerInfo.pageInfo} links={headerInfo.links}/>
+          <Main/>
+          <Footer copyText={footerInfo.crText}/>
+        </MainProvider>
+      </div>
   );
-}
+};
 
 const headerInfo = {
   pageInfo: {
@@ -26,11 +26,11 @@ const headerInfo = {
     {url: '#about', title: 'About me'},
     {url: '#projects', title: 'Projects'},
     {url: '#contact', title: 'Contact'},
-  ]
-}
+  ],
+};
 
 const footerInfo = {
-  crText: 'Joonas Niemi 2020'
-}
+  crText: 'Joonas Niemi 2020',
+};
 
 export default App;

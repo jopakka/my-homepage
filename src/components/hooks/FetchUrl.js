@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 
 //https://dev.to/vinodchauhan7/react-hooks-with-async-await-1n9g
 const FetchUrl = (url) => {
@@ -11,25 +11,25 @@ const FetchUrl = (url) => {
       setLoading(true);
       try {
         const response = await fetch(url);
-        const json = await response.json()
-        setResult(json)
+        const json = await response.json();
+        setResult(json);
       } catch (e) {
-        console.error('FetchUrl', e.message())
+        console.error('FetchUrl', e.message());
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
+    };
 
-    if(url !== "") {
-      fetchStuff()
+    if (url !== '') {
+      fetchStuff();
     }
-  }, [url])
+  }, [url]);
 
   return [result, loading];
-}
+};
 
 FetchUrl.propTypes = {
-  url: PropTypes.string
-}
+  url: PropTypes.string,
+};
 
 export default FetchUrl;

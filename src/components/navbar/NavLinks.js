@@ -8,15 +8,17 @@ const NavLinks = ({links, onClickEvt, className}) => {
   return (
       <div className='App-NavLinks'>
         <ul className={className}>
-          {links.map(link => <NavLinkItem key={links.indexOf(link)} onClick={onClickEvt} link={link}/>)}
+          {links.map(link => <NavLinkItem key={links.indexOf(link)}
+                                          onClick={onClickEvt} link={link}/>)}
         </ul>
       </div>
   );
 };
 
 NavLinks.defaultProps = {
-  onClickEvt: () => {}
-}
+  onClickEvt: () => {
+  },
+};
 
 NavLinks.propTypes = {
   links: PropTypes.array,

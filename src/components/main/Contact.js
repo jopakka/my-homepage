@@ -7,7 +7,7 @@ import {
 } from 'react-icons/fa';
 import './Contact.css';
 import {MainContext} from '../contexts/MainContext';
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 
 const Contact = ({id, contacts}) => {
   const {darkTheme} = useContext(MainContext)

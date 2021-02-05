@@ -8,16 +8,17 @@ import {projects, about, contacts} from '../../resources/details.json';
 import {MainContext} from '../contexts/MainContext';
 
 const Main = () => {
-  const {darkTheme} = useContext(MainContext)
+  const {darkTheme} = useContext(MainContext);
   return (
-      <div className={'App-Main ' + (darkTheme ? "dark" : "light")}>
+      <div className={'App-Main ' + (darkTheme ? 'dark' : 'light')}>
         <div className='Main-Container'>
-          <About id='about' imgInfo={about.img} img={image} texts={about.texts}/>
-          <Projects id='projects' projects={projects} />
-          <Contact id='contact' contacts={contacts} />
+          <About id='about' imgInfo={about.img} img={image}
+                 texts={about.texts}/>
+          <Projects id='projects' projects={projects}/>
+          <Contact id='contact' contacts={contacts}/>
         </div>
       </div>
   );
-}
+};
 
 export default Main;
