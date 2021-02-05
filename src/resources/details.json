@@ -1,0 +1,58 @@
+{
+  "about": {
+    "img": {
+      "alt": "Nice picture of me"
+    },
+    "texts": [
+      "I am second year student from Metropolia University of Applied Sciences with mobile solutions major. My interest of coding started few years ago, while my friend was studying game development and we made few games to game jams together. Then after a while I decided that I want to apply study programming and in our first year I liked mobile development most, so I chose that major.",
+      "In first year in Smart IoT-devices we had C-programming and our project was to program Arduino-bot to follow line track, battle on sumo-arena and solve simple maze. On Mobile health application we made Android app with Java. Our project there was food diary. On web techniques and digital media, we had html, CSS, and JavaScript. Our project there was poker and blackjack site, where you could play against simple “ai”. On game development we made game with Unity and C#. We made third person shooter, where player fight against mafia.",
+      "In this second year we had Object-Oriented Programming and Data communication where we did Android app using Kotlin. There our project was word quiz app, where user guesses words from one language to another. Then we study basic concepts of web technology, which includes responsive design with html and CSS, and back-end REST api with Node.js."
+    ]
+  },
+
+  "projects": [
+    {
+      "title": "GamerVibe website",
+      "url": "https://github.com/jopakka/GamerVibe-Website",
+      "desc": "Instagram for gamers, a place to share in game images and gamer persona. School project",
+      "img": "./res/gamervibe.png"
+    },
+    {
+      "title": "Guess That Word",
+      "url": "https://github.com/jopakka/word-quiz-project",
+      "desc": "Android game where user choose his/her language and language which he/she wants to learn, then game choose random word and make answers that are close to that word. School project",
+      "img": "./res/guessThatWord.png"
+    },
+    {
+      "title": "Jack The Avenger",
+      "url": "https://github.com/jopakka/Jack-The-Avenger",
+      "desc": "You play as a Jack and you try to avenge for local mafia for what they did for your father. School project",
+      "img": "./res/jacktheavenger.png"
+    },
+    {
+      "title": "MeFoodDiary",
+      "url": "https://github.com/jopakka/MeFoodDiary",
+      "desc": "Food diary. School project",
+      "img": "./res/mefooddiary.png"
+    },
+    {
+      "title": "Kenraali bot",
+      "url": "https://github.com/jopakka/Kenraali-bot",
+      "desc": "Discord bot. For fun",
+      "img": "./res/kenraalibot.png"
+    },
+    {
+      "title": "Zumo bot",
+      "url": "https://github.com/jopakka/Zumo-bot-project",
+      "desc": "Simple bot that can follow line, battle in sumo and solve simple maze. School project",
+      "img": "./res/zumo.png"
+    }
+  ],
+
+  "contacts": {
+    "facebook": "https://www.facebook.com/joonasn",
+    "github": "https://github.com/jopakka",
+    "email": "mailto:joonas.niemi9@gmail.com",
+    "linkedin":  "https://www.linkedin.com/in/joonasniemi"
+  }
+}
