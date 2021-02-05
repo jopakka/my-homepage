@@ -30,7 +30,7 @@ const headerInfo = {
 };
 
 const footerInfo = {
-  crText: 'Joonas Niemi 2020',
+  crText: 'Joonas Niemi 2021',
 };
 
 export default App;
