@@ -1,18 +1,21 @@
 .App-Main {
-    padding: 8px 16px;
+    padding: 0 32px;
 }
 
 .Main-Container {
     margin: auto;
+    padding-bottom: 2em;
     max-width: 1200px;
 }
 
 .dark {
     background-color: #333333;
     color: #eee;
+    transition: all .3s;
 }
 
 .light {
     background-color: #eee;
     color: #333333;
+    transition: all .3s;
 }

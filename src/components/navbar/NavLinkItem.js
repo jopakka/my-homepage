@@ -1,9 +1,9 @@
 import React from 'react';
 import './NavLinkItem.css';
 
-const NavLinkItem = ({link, clickEvt}) => {
+const NavLinkItem = ({link, onClick}) => {
   return (
-      <li className='App-NavLinkItem'><a href={link.url} onClick={clickEvt}>{link.title}</a></li>
+      <li className='App-NavLinkItem'><a href={link.url} onClick={onClick}>{link.title}</a></li>
   );
 }
 

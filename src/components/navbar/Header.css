@@ -1,6 +1,6 @@
 .App-Header {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: max-content auto auto;
     grid-template-rows: auto auto;
     background-color: gray;
     padding: 8px;
@@ -11,10 +11,11 @@
 }
 
 .App-Header > a {
-    font-size: 35px;
+    font-size: 2em;
     font-weight: 300;
     color: white;
     grid-column-start: 1;
+    grid-row-start: 1;
     justify-self: start;
     transition: none;
 }
@@ -24,11 +25,11 @@
 }
 
 .App-Bars {
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-row-start: 1;
     justify-self: end;
     align-self: center;
-    font-size: 24px;
+    font-size: 2em;
     color: white;
     cursor: pointer;
 }
@@ -39,7 +40,7 @@
 
 @media only screen and (min-width: 780px) {
     .App-Header > a {
-        font-size: 45px;
+        font-size: 3em;
         transition: color 200ms;
     }
 

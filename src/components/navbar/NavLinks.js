@@ -2,12 +2,12 @@ import React from 'react';
 import NavLinkItem from './NavLinkItem';
 import './NavLinks.css';
 
-const NavLinks = ({links, clickEvt, className}) => {
+const NavLinks = ({links, onClick, className}) => {
 
   return (
       <div className='App-NavLinks'>
         <ul className={className}>
-          {links.map(link => <NavLinkItem key={links.indexOf(link)} clickEvt={clickEvt} link={link}/>)}
+          {links.map(link => <NavLinkItem key={links.indexOf(link)} onClick={onClick} link={link}/>)}
         </ul>
       </div>
   );

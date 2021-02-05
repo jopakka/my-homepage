@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {createContext, useState} from 'react';
 import './App.css';
 import Header from './components/navbar/Header';
 import Main from './components/main/Main';
 import Footer from './components/Footer';
+import {MainProvider} from './components/contexts/MainContext';
 
 const App = () => {
   return (
     <div className="App">
-      <Header pageInfo={headerInfo.pageInfo} links={headerInfo.links} />
-      <Main />
-      <Footer copyText={footerInfo.crText}/>
+      <MainProvider>
+        <Header pageInfo={headerInfo.pageInfo} links={headerInfo.links} />
+        <Main />
+        <Footer copyText={footerInfo.crText}/>
+      </MainProvider>
     </div>
   );
 }

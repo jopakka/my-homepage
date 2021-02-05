@@ -1,6 +1,6 @@
 .App-NavLinks {
     grid-row-start: 2;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
 }
 
 .App-NavLinks ul {
@@ -15,7 +15,7 @@
 
 @media only screen and (min-width: 780px) {
     .App-NavLinks {
-        grid-column: 2 / span 1;
+        grid-column: 3 / span 1;
         grid-row-start: 1;
         align-self: center;
         justify-self: end;
